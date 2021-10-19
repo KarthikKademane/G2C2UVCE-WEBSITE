@@ -3,7 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-const _ = require("lodash");
+const mongoose = require('mongoose');
 
 
 
@@ -16,48 +16,56 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-let posts = [];
+mongoose.connect("mongodb+srv://admin-karthik:test123@cluster0.skqt2.mongodb.net/blogDB", {useNewUrlParser: true});
+
+const postSchema = {
+  title: String,
+  question: String,
+  winner: String,
+  content: String
+};
+
+const Post = mongoose.model("Post", postSchema);
+
 
 app.get("/", function(req, res){
   res.render("first");
 });
 
+
 app.get("/challenge", function(req, res){
-  res.render("home", {
-    startingContent: homeStartingContent,
-    posts: posts
-    });
+
+  Post.find({}, function(err, posts){
+    res.render("home", {
+      startingContent: homeStartingContent,
+      posts: posts
+      });
+  });
 });
 
-
-app.get("/signin", function(req, res){
-  res.render("signin");
-});
-
-
-app.post("/signin", function(req, res){
-
-
-});
 
 
 app.get("/compose", function(req, res){
   res.render("compose");
 });
 
+
 app.post("/compose", function(req, res){
-  const post = {
+  const post = new Post({
     title: req.body.postTitle,
     question:req.body.questionTitle,
     winner:req.body.winnerTitle,
     content: req.body.postBody
-  };
+  });
 
-  posts.push(post);
 
-  res.redirect("/challenge");
-
+  post.save(function(err){
+    if (!err){
+        res.redirect("/challenge");
+    }
+  });
 });
+
 
 
 app.post("/home", function(req, res){
@@ -71,22 +79,24 @@ app.post("/first", function(req, res){
 
 
 app.get("/posts/:postName", function(req, res){
-  const requestedTitle = _.lowerCase(req.params.postName);
 
-  posts.forEach(function(post){
-    const storedTitle = _.lowerCase(post.title);
+const requestedPostId = req.params.postName;
 
-    if (storedTitle === requestedTitle) {
-      res.render("post", {
-        title: post.title,
-        question:post.question,
-        winner: post.winner,
-        content: post.content
-      });
+  Post.findOne({_id: requestedPostId}, function(err, post){
+    if(err){
+      console.log(err);
     }
+    res.render("post", {
+      title: post.title,
+      question:post.question,
+      winner: post.winner,
+      content: post.content
+    });
   });
 
 });
+
+
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
