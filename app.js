@@ -45,26 +45,26 @@ app.get("/challenge", function(req, res){
 
 
 
-app.get("/compose", function(req, res){
-  res.render("compose");
-});
+// app.get("/compose", function(req, res){
+//   res.render("compose");
+// });
 
 
-app.post("/compose", function(req, res){
-  const post = new Post({
-    title: req.body.postTitle,
-    question:req.body.questionTitle,
-    winner:req.body.winnerTitle,
-    content: req.body.postBody
-  });
-
-
-  post.save(function(err){
-    if (!err){
-        res.redirect("/challenge");
-    }
-  });
-});
+// app.post("/compose", function(req, res){
+//   const post = new Post({
+//     title: req.body.postTitle,
+//     question:req.body.questionTitle,
+//     winner:req.body.winnerTitle,
+//     content: req.body.postBody
+//   });
+//
+//
+//   post.save(function(err){
+//     if (!err){
+//         res.redirect("/challenge");
+//     }
+//   });
+// });
 
 
 
@@ -101,6 +101,7 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
+
 
 app.listen(port, function() {
   console.log("Server started on port 3000");
