@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 
 
-const homeStartingContent = "To accomplish the purpose of Clean and Green UVCE, a student led initiative, Go Green and CLean Club which is simply known as G2C2 was started in the year 2014 by a group of ME CSE deapartment students. It is now run by enthusiasts from 2nd and 3rd year Btech students. Presently it has about 26 voluntary members who are dedicated towards the cause.";
+const homeStartingContent = "GreenWarrior Challenge is a monthly competition where Participants have to come up with practical solutions for some of the current real world environmental issues. Problem statement will be released during the beginning of every month and the participants will have over a week of time to pitch in their solutions.";
 
 const app = express();
 

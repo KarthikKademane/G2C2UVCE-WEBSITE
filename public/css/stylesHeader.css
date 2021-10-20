@@ -273,7 +273,7 @@ body{
 }
 
 .aboutg2c2 {
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 5vw 5vw;
   margin-bottom: 50px;
   line-height: 2;
@@ -295,9 +295,9 @@ body{
 }
 
 .aboutgchallenge {
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 5vw 5vw;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   line-height: 2;
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
@@ -548,11 +548,13 @@ body{
   .aboutg2c2 {
   padding-left: 5px;
     padding-right: 5px;
+    font-size: 17px;
   }
 
   .aboutgchallenge {
     padding-left: 5px;
       padding-right: 5px;
+      font-size: 17px;
     }
 
     #val{

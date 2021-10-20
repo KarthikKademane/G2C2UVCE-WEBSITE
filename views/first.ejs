@@ -1,4 +1,3 @@
-
 <%- include("partialHeader/header"); -%>
 
 
@@ -10,374 +9,370 @@
 
 
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <img class="navbar-logo" src="./g2c2.png"/>
-        <p class="navbar-head">G2C2</p>
-        <!-- <nav> -->
-          <input id="nav-toggle" type="checkbox">
-          <ul class="links">
-            <li><a for="nav-toggle" href="#home">Home</a></li>
-            <li><a for="nav-toggle" href="#about">About</a></li>
-            <li><a for="nav-toggle" href="#Challenge">Challenge</a></li>
-            <li><a for="nav-toggle" href="#gallery">Gallery</a></li>
-            <li><a for="nav-toggle" href="#contact">Team</a></li>
-            <li><a for="nav-toggle" href="#contact">Contact</a></li>
-            <br>
-          </ul>
-            <label for="nav-toggle" class="icon-burger" id="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </label>
-        <!-- </nav> -->
+  <!-- Navbar -->
+  <div class="navbar">
+    <img class="navbar-logo" src="./g2c2.png" />
+    <p class="navbar-head">G2C2</p>
+    <!-- <nav> -->
+    <input id="nav-toggle" type="checkbox">
+    <ul class="links">
+      <li><a for="nav-toggle" href="#home">Home</a></li>
+      <li><a for="nav-toggle" href="#about">About</a></li>
+      <li><a for="nav-toggle" href="#Challenge">Challenge</a></li>
+      <li><a for="nav-toggle" href="#gallery">Gallery</a></li>
+      <li><a for="nav-toggle" href="#contact">Team</a></li>
+      <li><a for="nav-toggle" href="#contact">Contact</a></li>
+      <br>
+    </ul>
+    <label for="nav-toggle" class="icon-burger" id="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+    <!-- </nav> -->
 
 
-        <script>
-          const navbar=document.querySelector('.navbar')
-const logo=document.querySelector('.navbar-logo')
-const head=document.querySelector('.navbar-head')
-logo.classList.add("navbar-hide")
-window.onscroll=()=>{
-    if(window.scrollY>100){
-        navbar.classList.add("navbar-scrolled")
-        logo.classList.add("navbar-show")
-        head.classList.add("navbar-hide")
-        logo.classList.remove("navbar-hide")
-    }
-    else{
-        navbar.classList.remove("navbar-scrolled")
-        logo.classList.remove("navbar-show")
-        logo.classList.add("navbar-hide")
-        head.classList.remove("navbar-hide")
-    }
-}
+    <script>
+      const navbar = document.querySelector('.navbar')
+      const logo = document.querySelector('.navbar-logo')
+      const head = document.querySelector('.navbar-head')
+      logo.classList.add("navbar-hide")
+      window.onscroll = () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("navbar-scrolled")
+          logo.classList.add("navbar-show")
+          head.classList.add("navbar-hide")
+          logo.classList.remove("navbar-hide")
+        } else {
+          navbar.classList.remove("navbar-scrolled")
+          logo.classList.remove("navbar-show")
+          logo.classList.add("navbar-hide")
+          head.classList.remove("navbar-hide")
+        }
+      }
 
-// hamburger menu
-var x=1;
-function hamburger()
-{
-    if(x==1)
-    {
-        document.querySelector(".links").style.display="block";
-        x=0;
-    }
-    else{
-        document.querySelector(".links").style.display="none";
-        x=1;
-    }
-}
+      // hamburger menu
+      var x = 1;
 
-document.getElementById("burger").addEventListener("click",()=>{
-    navbar.classList.toggle("increase")
-    logo.classList.toggle("logo-changed")
-})
+      function hamburger() {
+        if (x == 1) {
+          document.querySelector(".links").style.display = "block";
+          x = 0;
+        } else {
+          document.querySelector(".links").style.display = "none";
+          x = 1;
+        }
+      }
 
-        </script>
+      document.getElementById("burger").addEventListener("click", () => {
+        navbar.classList.toggle("increase")
+        logo.classList.toggle("logo-changed")
+      })
+    </script>
+
+  </div>
+  <!-- home -->
+  <section id="home" class="home">
+    <div class="left">
+      <h1>G2C2</h1>
+      <p>"The earth is what we all have in common"</p>
+    </div>
+    <div class="right">
+      <div class="cent"> <img src="./g2c2.png" /></div>
+    </div>
+  </section>
+
+
+  <div id="circularMenu1" class="circular-menu circular-menu-left" style="z-index: 999;">
+
+    <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+      <i class="fa fa-link"></i>
+    </a>
+
+    <menu class="items-wrapper">
+      <a href="https://www.instagram.com/invites/contact/?i=ivg0nsdrwqyr&utm_content=3zmfl6k" class="menu-item fa fa-instagram"></a>
+      <a href="https://maps.app.goo.gl/EHMicJzMxJK9RKFs9" class="menu-item fas fa-map-marker-alt"></a>
+      <a href="mailto:g2c2uvce2021@gmail.com" class="menu-item fas fa-envelope opp"></a>
+      <a href="tel:+918867190078" class="menu-item fa fa-phone"></a>
+    </menu>
+
+  </div>
+
+
+
+  <section id="about">
+    <div class="container">
+      <h1 id="nam" class="about" style="padding-top: 50px;">ABOUT</h1>
+
+      <p class="aboutg2c2">To accomplish the purpose of Clean and Green UVCE, a student led initiative, " Go Green and CLean Club" which is simply known as G2C2 was started in the year 2014 by a group of ME CSE deapartment students. It is now run by
+        enthusiasts from
+        2nd and 3rd year Btech students. Presently it has about 26 voluntary members who are dedicated towards the cause.</p>
+    </div>
+  </section>
+
+
+  <section id="Challenge">
+
+    <div class="container">
+
+
+      <h1 class="nam" id="challenge">Green Warrior Challenge</h1>
+
+      <p class="aboutgchallenge">GreenWarrior Challenge is a monthly competition where Participants have to come up with practical solutions for some of the current real world environmental issues.
+        Problem statement will
+        be released during the beginning of every month and the participants will have over a week of time to pitch in their solutions.
+      </p>
+      <div id="viewbutton">
+
+        <form class="" action="/first" method="post">
+          <button type="submit" class=" btn btn-success btn-lg" style="  background-color: #0C685C;">
+            <h4 style="margin-bottom: 0px;">&ensp;View&ensp;<i class="fas fa-arrow-circle-right">&ensp;</i></h4>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="gallery" style="z-index: -9999; padding-bottom: 50px;">
+
+    <div class="container">
+
+
+      <h1 id="nam" style="padding-top: 50px; margin-bottom: 40px;">Gallery Section</h1>
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pic3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pic2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pic1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pic4.png" class="d-block w-100" alt="...">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
     </div>
-    <!-- home -->
-    <section id="home" class="home">
-        <div class="left">
-            <h1>G2C2</h1>
-            <p>"The earth is what we all have in common"</p>
-        </div>
-        <div class="right">
-          <div class="cent">  <img src="./g2c2.png"/></div>
-        </div>
-    </section>
 
-
-    <div id="circularMenu1" class="circular-menu circular-menu-left" style="z-index: 999;">
-
-      <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
-        <i class="fa fa-link"></i>
-      </a>
-
-      <menu class="items-wrapper">
-        <a href="#" class="menu-item fa fa-instagram"></a>
-        <a href="#" class="menu-item fas fa-map-marker-alt"></a>
-        <a href="#" class="menu-item fas fa-envelope opp"></a>
-        <a href="#" class="menu-item fa fa-phone"></a>
-      </menu>
-
-    </div>
+  </section>
 
 
 
-    <section id="about">
-      <div class="container">
-        <h1 id="nam" class="about" style="padding-top: 50px;">ABOUT</h1>
 
-        <p class="aboutg2c2">To accomplish the purpose of Clean and Green UVCE, a student led initiative, " Go Green and CLean Club" which is simply known as G2C2 was started in the year 2014 by a group of ME CSE deapartment students. It is now run by
-          enthusiasts from
-          2nd and 3rd year Btech students. Presently it has about 26 voluntary members who are dedicated towards the cause.</p>
-      </div>
-    </section>
+  <section id="core">
 
+    <h1 id="nam" style="padding-bottom: 50px;">Team Members of G2C2 for year 2021-2022</h1>
 
-    <section id="Challenge">
+    <div class="container">
 
-      <div class="container">
+      <div class="bigbutton">
 
-
-        <h1 class="nam" id="challenge">Green Warrior Challenge</h1>
-
-        <p class="aboutgchallenge">To accomplish the purpose of Clean and Green UVCE, a student led initiative, " Go Green and CLean Club" which is simply known as G2C2 was started in the year 2014 by a group of ME CSE deapartment students. It is now
-          run by enthusiasts from
-          2nd and 3rd year Btech students. Presently it has about 26 voluntary members who are dedicated towards the cause.</p>
-        </p>
-        <div id="viewbutton">
-
-          <form class="" action="/first" method="post">
-            <button type="submit" class=" btn btn-success btn-lg" style="  background-color: #0C685C;">
-              <h4 style="margin-bottom: 0px;">&ensp;View&ensp;<i class="fas fa-arrow-circle-right">&ensp;</i></h4>
-            </button>
-          </form>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="gallery" style="z-index: -9999; padding-bottom: 50px;">
-
-      <div class="container">
-
-
-        <h1 id="nam" style="padding-top: 50px; margin-bottom: 40px;">Gallery Section</h1>
-
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img  src="pic3.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="pic2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="pic1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="pic4.png" class="d-block w-100" alt="...">
-            </div>
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <!-- Button trigger modal -->
+        <div class="d-grid gap-2">
+          <button type="button" id="containerbutton" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <h6 style="margin-bottom: 0px;">Team Members</h6>
           </button>
         </div>
 
-      </div>
-
-    </section>
-
-
-
-
-    <section id="core">
-
-      <h1 id="nam" style="padding-bottom: 50px;">Team Members of G2C2 for year 2021-2022</h1>
-
-      <div class="container">
-
-        <div class="bigbutton">
-
-          <!-- Button trigger modal -->
-          <div class="d-grid gap-2">
-            <button type="button" id="containerbutton" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              <h6 style="margin-bottom: 0px;">Team Members</h6>
-            </button>
-          </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">Team Members</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <ul class="list-group">
-                    <li class="list-group-item">
-                      <h5>Anirudh</h5>
-                      1st year CSE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Sanjana Rao</h5>
-                      1st year CSE
-                    </li>
-
-                    <li class="list-group-item">
-                      <h5>Shreya</h5>
-                      1st year CSE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>N V Dixitha Reddy</h5>
-                      1st year ISE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Vishal Vinay Ram</h5>
-                      1st year ISE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Darshan J</h5>
-                      1st year ECE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Shaik Abdul Salam Batcha</h5>
-                      1st year ECE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Yatish Gowda</h5>
-                      1st year ECE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Manjunatha K</h5>
-                      1st year Mech
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Adarsh Tambake</h5>
-                      1st year Civil
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Kanchana</h5>
-                      1st year Civil
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Manjunath M</h5>
-                      1st year Civil
-                    </li>
-
-                    <li class="list-group-item">
-                      <h5>Saliha Jain</h5>
-                      1st year Civil
-                    </li>
-
-                    <li class="list-group-item">
-                      <h5>Shalini R</h5>
-                      1st year Civil
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Karthik K S</h5>
-                      2nd year CSE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Sinchana</h5>
-                      2nd year CSE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Kavya Bhat</h5>
-                      2nd year ISE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Meghana K S</h5>
-                      2nd year ECE
-                    </li>
-
-                    <li class="list-group-item">
-                      <h5>Riyaz</h5>
-                      2nd year ECE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Shrinidhi</h5>
-                      2nd year ECE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Vrishank</h5>
-                      2nd year ECE
-                    </li>
-
-                    <li class="list-group-item">
-                      <h5>Vinutha V</h5>
-                      2nd year EEE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Yashika</h5>
-                      2nd year EEE
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Chiranth H R</h5>
-                      2nd year Civil
-                    </li>
-                    <li class="list-group-item">
-                      <h5>Syed Mehaboob</h5>
-                      1st year M Tech
-                    </li>
-                  </ul>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Team Members</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </div>
-          </div>
-        </div>
+              <div class="modal-body">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <h5>Anirudh</h5>
+                    1st year CSE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Sanjana Rao</h5>
+                    1st year CSE
+                  </li>
 
-        <div class="moto">
+                  <li class="list-group-item">
+                    <h5>Shreya</h5>
+                    1st year CSE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>N V Dixitha Reddy</h5>
+                    1st year ISE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Vishal Vinay Ram</h5>
+                    1st year ISE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Darshan J</h5>
+                    1st year ECE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Shaik Abdul Salam Batcha</h5>
+                    1st year ECE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Yatish Gowda</h5>
+                    1st year ECE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Manjunatha K</h5>
+                    1st year Mech
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Adarsh Tambake</h5>
+                    1st year Civil
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Kanchana</h5>
+                    1st year Civil
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Manjunath M</h5>
+                    1st year Civil
+                  </li>
 
+                  <li class="list-group-item">
+                    <h5>Saliha Jain</h5>
+                    1st year Civil
+                  </li>
 
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <i class="logo fas fa-broom fa-3x"></i>
-                <h5 class="paddingup">Cleaner</h5>
+                  <li class="list-group-item">
+                    <h5>Shalini R</h5>
+                    1st year Civil
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Karthik K S</h5>
+                    2nd year CSE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Sinchana</h5>
+                    2nd year CSE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Kavya Bhat</h5>
+                    2nd year ISE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Meghana K S</h5>
+                    2nd year ECE
+                  </li>
+
+                  <li class="list-group-item">
+                    <h5>Riyaz</h5>
+                    2nd year ECE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Shrinidhi</h5>
+                    2nd year ECE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Vrishank</h5>
+                    2nd year ECE
+                  </li>
+
+                  <li class="list-group-item">
+                    <h5>Vinutha V</h5>
+                    2nd year EEE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Yashika</h5>
+                    2nd year EEE
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Chiranth H R</h5>
+                    2nd year Civil
+                  </li>
+                  <li class="list-group-item">
+                    <h5>Syed Mehaboob</h5>
+                    1st year M Tech
+                  </li>
+                </ul>
               </div>
-              <div class="col">
-                <i class="logo fas fa-tree fa-3x"></i>
-
-                <h5 class="paddingup">Greener</h5>
-              </div>
-              <div class="col">
-                <i class="logo fas fa-temperature-low fa-3x"></i>
-                <h5 class="paddingup">Better</h5>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h1 class="nam" id="con">Contact</h1>
+      <div class="moto">
 
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <a id="anchortag" href="#"><i class="fas fa-map-marked-alt fa-2x opp"></i></a>
-              <div class="upperpad">
-                <a id="anchortag" href="#"> UVCE, K R Circle, Bengaluru</a>
-              </div>
+            <div class="col">
+              <i class="logo fas fa-broom fa-3x"></i>
+              <h5 class="paddingup">Cleaner</h5>
             </div>
-            <div id="val" class="col-lg-4 col-md-4 col-sm-12">
-              <a id="anchortag" href="tel:+918884080634"><i class="fas fa-phone fa-2x opp"></i></a>
-              <div class="upperpad">
-                <a id="anchortag" href="tel:+918884080634"> +91 888840 80634</a>
-              </div>
-            </div>
-            <div id="val" class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col">
+              <i class="logo fas fa-tree fa-3x"></i>
 
-              <a id="anchortag" href="mailto:karthikkssuresh@gmail.com"><i class="fas fa-envelope fa-2x opp"></i></a>
-              <div class="upperpad">
-                <a id="anchortag" href="mailto:g2c2uvce@gmail.com">g2c2uvce@gmail.com</a>
-              </div>
+              <h5 class="paddingup">Greener</h5>
+            </div>
+            <div class="col">
+              <i class="logo fas fa-temperature-low fa-3x"></i>
+              <h5 class="paddingup">Better</h5>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h1 class="nam" id="con">Contact</h1>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <a id="anchortag" href="#"><i class="fas fa-map-marked-alt fa-2x opp"></i></a>
+            <div class="upperpad">
+              <a id="anchortag" href="https://maps.app.goo.gl/EHMicJzMxJK9RKFs9"> UVCE, K R Circle, Bengaluru</a>
+            </div>
+          </div>
+          <div id="val" class="col-lg-4 col-md-4 col-sm-12">
+            <a id="anchortag" href="tel:+918884080634"><i class="fas fa-phone fa-2x opp"></i></a>
+            <div class="upperpad">
+              <a id="anchortag" href="tel:+918867190078"> +91 88671 90078</a>
+            </div>
+          </div>
+          <div id="val" class="col-lg-4 col-md-4 col-sm-12">
+
+            <a id="anchortag" href="mailto:g2c2uvce2021@gmail.com"><i class="fas fa-envelope fa-2x opp"></i></a>
+            <div class="upperpad">
+              <a id="anchortag" href="mailto:g2c2uvce2021@gmail.com">g2c2uvce2021@gmail.com</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section>
+    </div>
+
+  </section>
 
   <%- include("partialHeader/footer"); -%>
