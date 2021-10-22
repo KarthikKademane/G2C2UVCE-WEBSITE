@@ -16,6 +16,15 @@ body{
 
 /* navbar  */
 
+#ADHAMYA{
+  color: #3C551A;
+  font-size: 20px;
+}
+#ADHAMYA:hover{
+  color: #0C685C;
+  font-size: 20px;
+}
+
 .navbar-head{
   font-family: 'Libre Baskerville', serif;
 }
