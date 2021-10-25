@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 
 
-const homeStartingContent = "GreenWarrior Challenge is a monthly competition where Participants have to come up with practical solutions for some of the current real world environmental issues. Problem statement will be released during the beginning of every month and the participants will have over a week of time to pitch in their solutions.";
+const homeStartingContent = "Green Warrior Challenge is a monthly competition where Participants have to come up with practical solutions for some of the current real world environmental issues. Problem statement will be released during the beginning of every month and the participants will have over a week of time to pitch in their solutions.";
 
 const app = express();
 
