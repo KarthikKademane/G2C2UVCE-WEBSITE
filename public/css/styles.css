@@ -2,6 +2,11 @@ body{
   overflow-x: hidden;
 }
 
+#registerbutton{
+  text-align: center;
+  margin-bottom: 120px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
@@ -254,7 +259,7 @@ body{
 #homelengths{
 font-size: 20px;
   padding: 0 5vw 5vw;
-  margin: 70px 0 50px;
+  margin: 70px 0 10px;
   line-height: 2;
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
