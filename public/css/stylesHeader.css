@@ -290,6 +290,12 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.milagro{
+  height: 600px;
+  padding: 0 280px;
+  text-align: center;
+}
+
 /* ////////////////////////////////////////// CHALLENGE PART  //////////////////////////// */
 #Challenge {
 
@@ -558,6 +564,12 @@ body{
   padding-left: 5px;
     padding-right: 5px;
     font-size: 17px;
+  }
+
+  .milagro{
+    height: 230px;
+    padding: 0 50px;
+    text-align: center;
   }
 
   .aboutgchallenge {
