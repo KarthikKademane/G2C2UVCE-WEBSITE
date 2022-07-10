@@ -292,7 +292,7 @@ body{
 
 .milagro{
   height: 600px;
-  padding: 0 280px;
+  padding: 0 150px;
   text-align: center;
 }
 
@@ -567,8 +567,8 @@ body{
   }
 
   .milagro{
-    height: 230px;
-    padding: 0 50px;
+    height: 170px;
+    padding: 0 ;
     text-align: center;
   }
 
